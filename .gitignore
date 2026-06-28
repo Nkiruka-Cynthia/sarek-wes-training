@@ -1,0 +1,43 @@
+# Nextflow runtime
+work/
+.nextflow/
+.nextflow.log*
+
+# Local results (not pre-computed ones)
+results/
+results_example/
+results_homework/
+
+# Reference files — too large for Git
+reference/
+*.fasta
+*.fa
+*.fasta.gz
+*.fa.gz
+*.bam
+*.bai
+*.vcf
+*.vcf.gz
+*.tbi
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Conda
+.conda/
+conda-env/

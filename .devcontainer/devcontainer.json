@@ -1,0 +1,19 @@
+{
+  "name": "Sarek WES Training (30-min Practical)",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:3-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "moby": true
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/post-install.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "nextflow.nextflow"
+      ]
+    }
+  },
+  "remoteUser": "root"
+}
