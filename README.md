@@ -139,11 +139,15 @@ bash main.sh
 # View all output directories
 ls results/
 
-# Inspect variant calls
-zcat results/variant_calling/strelka/NA12878_1/NA12878_1.variants.vcf.gz | head -50
+# Inspect the germline VCFs
+zcat results/variant_calling/strelka/NA12878_1/*.vcf.gz | head -50
+zcat results/variant_calling/strelka/NA12878_2/*.vcf.gz | head -50
 
-# Compare with VEP-annotated example
-cat examples/annotated_example.vcf
+# Inspect the somatic VCF
+zcat results/variant_calling/strelka/tumor_sample_vs_normal_sample/*.vcf.gz | head -50
+
+# Compare with the annotated example
+cat examples/annotated_example.vcf | head -80
 
 # Open QC report (VS Code → right-click → Open with Live Server)
 results/multiqc/multiqc_report.html
